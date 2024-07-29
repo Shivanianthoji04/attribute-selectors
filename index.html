@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.mg{
+border: 2px solid black;
+height: 700px;
+width: 600px;
+background-image: url(wall\ paper.png);
+margin: auto;
+padding: 30px;
+}
+[for="fname"]{
+ background-color: plum ;
+font-size: 25px;
+
+}
+[for~="sname"]{
+background-color: plum ;
+font-size: 25px;
+border: 1px solid;
+}
+[for="mail"]{
+background-color: plum ;
+font-size: 25px;
+border: 1px solid;
+}
+[for^="m"]{
+background-color: plum ;
+font-size: 25px;
+border: 2px solid;
+}
+[for$="d"]{
+background-color: plum ;
+font-size: 25px;
+border: 2px solid;
+}
+[for*="name"]{
+background-color: plum ;
+font-size: 25px;
+border: 2px solid;
+}
+[for$="s"]{
+background-color: plum ;
+font-size: 25px;
+border: 2px solid;
+}
+ [for$="e"]{
+background-color: plum ;
+font-size: 25px;
+border: 2px solid;
+} 
+[for|="-time"]{
+background-color: plum ;
+font-size: 25px;
+border: 2px solid;
+}
+[for*="resume"]{
+background-color: plum ;
+font-size: 25px;
+border: 2px solid;
+}
+    </style>
+</head>
+<body>
+    <form class="mg">
+        <label for="fname">Firstname:</label>
+         <input placeholder="eg.john" required id="fname" type="text" name="fname"/>
+        <br><br><br> <label for="sname">Secoundname:</label> 
+         <input id="sname" type="text" name="sname">
+        <br><br><br> <label for="mail">email:</label>
+         <input id="mail" type="email" name="email">
+        <br><br><br> <label for="mnumber">mobile number</label>
+         <input id="mnumber" method="post" type="number" name="mnumber">
+        <br><br><br> <label for="password">Password</label>
+         <input required methods="post" id="password" type="password" name="Password/">
+         <br><br><br> <label for="cname">Collegename</label>
+         <input id="cname">
+        <br><br><br><label for="address">Addres</label>
+        <input id="address">
+        <br><br><br> <label for="date">Date of registration:</label>
+         <input id="date" type="date" name="date/"></fbr>
+        <br><br><br><label for="-time"> Time:</label>
+        <input id="time" type="time" name="time"/> 
+        <br><br><br> <label for="resume"> Add your Resume</label>
+        <input id="resume"  name="resume" type="file">
+        <input type="submit">
+
+    </form>
+</html>
